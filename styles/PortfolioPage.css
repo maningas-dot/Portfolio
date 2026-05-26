@@ -1,0 +1,51 @@
+.experience-section {
+  padding-top: 3rem;
+}
+
+.timeline {
+  display: grid;
+  gap: 1.5rem;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0.8rem;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: rgba(77, 208, 225, 0.2);
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  position: relative;
+}
+
+.timeline-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 6px rgba(77, 208, 225, 0.12);
+  margin-top: 0.35rem;
+}
+
+.timeline-content h3 {
+  margin: 0 0 0.4rem;
+}
+
+.timeline-meta {
+  color: var(--accent);
+  margin: 0 0 0.75rem;
+}
+
+@media (max-width: 720px) {
+  .timeline-item {
+    grid-template-columns: 1fr;
+  }
+}
