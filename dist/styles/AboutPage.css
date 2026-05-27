@@ -37,6 +37,19 @@
   gap: 0.9rem;
 }
 
+.skills-category {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.skills-category h3 {
+  margin: 0;
+  color: var(--accent);
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 .skill-pill {
   display: inline-flex;
   align-items: center;
